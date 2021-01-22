@@ -58,7 +58,7 @@ class ImagesHelper(BasePage):
     def check_button_and_equals_images(self):
         first_image_url = self.find_element(YandexImageLocators.LOCATOR_YANDEX_IMAGE_URL).get_attribute('src')
         wait = WebDriverWait(self.driver,5)
-        wait.until(EC.element_to_be_clickable(YandexImageLocators.LOCATOR_YANDEX_FORWARD_BUTTON))
+        wait.until(EC.presence_of_element_located(YandexImageLocators.LOCATOR_YANDEX_FORWARD_BUTTON))
         button_forward = self.find_element(YandexImageLocators.LOCATOR_YANDEX_FORWARD_BUTTON)
         button_forward.click()
         second_image_url = self.find_element(YandexImageLocators.LOCATOR_YANDEX_IMAGE_URL).get_attribute('src')
