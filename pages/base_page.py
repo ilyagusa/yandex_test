@@ -20,7 +20,7 @@ class BasePage:
 
     def visible_elements(self,locator,time=5):
         return WebDriverWait(self.driver,time).until(EC.visibility_of_element_located(locator),
-                                                      message=f"Can't find elements by locator {locator}")
+                                                      message=f"The element is still invisible by locator {locator}")
 
     def go_to_site(self):
         return self.driver.get(self.base_url)
