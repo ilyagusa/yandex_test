@@ -28,3 +28,4 @@ def test_return_result_table(browser):
 def test_presence_link_tensor(browser):
     yandex_main_page = SearchHelper(browser)
     assert yandex_main_page.result_href_table() , "В первых пяти результатах не нашлось ни одной ссылки на tensor.ru"
+    # чтобы увидеть результат загрузки страницы
