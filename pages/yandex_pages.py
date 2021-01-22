@@ -57,7 +57,7 @@ class SearchHelper(BasePage):
                 return True
         return False
             
-
+    
     def check_element_exists(self):
         try:
             self.find_element(YandexSeacrhLocators.LOCATOR_YANDEX_SEARCH_FIELD)
