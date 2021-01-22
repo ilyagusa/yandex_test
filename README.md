@@ -6,3 +6,4 @@
   `pip install pytest`
 ## Запуск:
   `pytest`
+## Использовался chromedriver версии 88.0.4324.96 и бразуре Chrome последней версии
